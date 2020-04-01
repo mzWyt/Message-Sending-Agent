@@ -1,0 +1,4 @@
+'EN'
+Some Text [t]
+1630
+########END OF FILE########
