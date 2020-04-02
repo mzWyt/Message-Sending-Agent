@@ -2,3 +2,4 @@
 Some Text [t]
 1630
 ########END OF FILE########
+This file must coded by utf-8 to provide Chinese messages.
