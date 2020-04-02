@@ -12,8 +12,11 @@ Updated on 4/1/2020.
 data.txt format:
 
 > 'EN' or 'ZH' - Chinese or English
+
 > Some Text - The message you wanna share
+
 > 1630 - The time you wanna send the message
+
 > ########END OF FILE########
 
  
