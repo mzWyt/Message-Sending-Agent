@@ -1,24 +1,18 @@
-# WeChat-message-sender
+# Message Sending Agent
 
-\# This software is by mzWyt and it's under MPL-2.0 Licence.
+This software is by mzWyt and it's under MPL-2.0 Licence.
 
-\# Updated on 4/1/2020.
-
-\# Available here: 
-
-\# https://github.com/mzWyt/WeChat-message-sender
-
-\############################################################
+Updated on 4/1/2020.
 
 1. update the data in data.txt
 2. keep chat software running with the focus in the entry box
-3. run Message Sender.exe
+3. run "Message Sender.py"
 
 
 data.txt format:
 
-------------------------------------------
-'EN' or 'ZH' - Your WeChat version
+\------------------------------------------
+'EN' or 'ZH' - The version
 
 Some Text - The message you wanna share
 
@@ -26,5 +20,5 @@ Some Text - The message you wanna share
 
 ########END OF FILE########
 
-------------------------------------------
+\------------------------------------------
  
