@@ -12,7 +12,8 @@ Updated on 4/1/2020.
 data.txt format:
 
 \------------------------------------------
-'EN' or 'ZH' - The version
+
+'EN' or 'ZH' - Chinese or English
 
 Some Text - The message you wanna share
 
