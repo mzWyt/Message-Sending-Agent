@@ -2,7 +2,7 @@
 
 This software is by mzWyt and it's under MPL-2.0 Licence.
 
-Updated on 4/1/2020.
+Updated on 4/2/2020.
 
 1. update the data in data.txt
 2. keep chat software running with the focus in the entry box
