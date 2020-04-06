@@ -7,7 +7,7 @@ import random
 
 lang = {"ZH": "微信", "EN": "WeChat"}
 
-def get_data():
+def get_data(): # get data from txt file
     global plan_title, plan_message, plan_time
     try:
         f = open("./data.txt", encoding="utf-8")
@@ -28,31 +28,33 @@ def get_data():
         print("Failed to read data file")
         print(err)
 
-def get_time():
+def get_time(): # get current time
     req_time = time.localtime(time.time())
     curr_time = req_time.tm_hour * 100 + req_time.tm_min
     return curr_time 
 
-def copy_text(text):
+def copy_text(text): # copy the text you wanna send
     w.OpenClipboard()
     w.EmptyClipboard()
     w.SetClipboardData(win32con.CF_UNICODETEXT, text)
     w.CloseClipboard()
 
-def paste_text():
+def paste_text(): # press ctrl + v
     win32api.keybd_event(17, 0, 0, 0)
     win32api.keybd_event(86, 0, 0, 0)
     win32api.keybd_event(86, 0, win32con.KEYEVENTF_KEYUP, 0)
     win32api.keybd_event(17, 0, win32con.KEYEVENTF_KEYUP, 0)
 
-def press_send(): 
+def press_send(): # press alt + s
     win32api.keybd_event(18, 0, 0, 0)  
     win32api.keybd_event(83, 0, 0, 0)
     win32api.keybd_event(83, 0, win32con.KEYEVENTF_KEYUP, 0)
     win32api.keybd_event(18, 0, win32con.KEYEVENTF_KEYUP, 0)
 
-def send_message(message):
+def send_message(message): # copy, paste & send
     copy_text(message)
+    # something to control the window
+    
     # try:
     #     handle = win32gui.FindWindow(None, plan_title)
     #     win32gui.SetForegroundWindow(handle) 
@@ -63,7 +65,7 @@ def send_message(message):
     paste_text()
     press_send()
 
-def schedule(gap):
+def schedule(gap): # check current time per gap
     while True:
         if get_time() == plan_time:
         # if True:
